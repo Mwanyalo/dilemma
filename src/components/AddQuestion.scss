@@ -1,0 +1,56 @@
+@import "../index.scss";
+
+.question-form {
+  padding: 20px;
+  background-color: $background;
+  color: rgb(37, 30, 119);
+  width: 100%;
+  box-shadow: rgba(0, 0, 0, 0.12) 0px 0px 4px 1px;
+}
+
+.form-control {
+	color:#8a8a8a;
+	display: block;
+	border:1px solid #ccc;
+	-moz-background-clip: padding;
+	-webkit-background-clip: padding-box;
+	background-clip: padding-box;
+  background-color: #fff;
+}
+
+.custom-control {
+  padding-left: 0;
+}
+
+.ml{
+  margin-left: 25px;
+}
+
+.dropzone {
+  background-color: #fff;
+  color: #ccc;
+  text-align: center;
+  border: 1px solid #ccc;
+}
+
+.img-thumbnail {
+  height: 100px;
+  margin-top: 10px; 
+}
+
+.question-btn {
+  background: #ca232a;
+  background-image: -webkit-linear-gradient(45deg,red,purple);
+  background-image: -o-linear-gradient(45deg,red,purple);
+  background-image: linear-gradient(45deg,red,purple);
+  width: 70%;
+  height: 35px;
+  color: #fff;
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+  .question-form {
+    height: 100vh;
+  }
+} 
