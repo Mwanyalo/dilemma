@@ -1,8 +1,10 @@
 import React, { Component } from "react";
 import Dropzone from "react-dropzone";
-import axios from 'axios';
-
+import PropTypes from 'prop-types';
+import { connect } from 'react-redux';
 import "./AddQuestion.scss";
+
+import { createDilemma } from '../_store/actions/dilemmaActions';
 
 class AddQuestion extends Component {
 
@@ -46,11 +48,8 @@ class AddQuestion extends Component {
     if(this.state.question === "" || this.state.tag === ""){
        this.error.message = "This is a required field"
     } else {
-      axios.post(`http://localhost:3004/questions`, this.state)
-       .then(res => {
-          console.log(res.data);
-        this.props.history.push('/')
-      })
+      this.props.createDilemma(this.state);
+      this.props.history.push('/')
     }
  
   }
@@ -157,4 +156,9 @@ class AddQuestion extends Component {
   }
 }
 
-export default AddQuestion;
+
+AddQuestion.propTypes = {
+  createDilemma: PropTypes.func.isRequired
+};
+
+export default connect(null, { createDilemma })(AddQuestion);

@@ -1,21 +1,22 @@
 import 'bootstrap/dist/css/bootstrap.min.css';
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './index.scss';
-import App from './App';
-import AddQuestion from './components/AddQuestion';
-
 import { Route, BrowserRouter as Router } from 'react-router-dom'
 import * as serviceWorker from './serviceWorker';
+import './index.scss';
+import App from './components/App';
+import AddQuestion from './components/AddQuestion';
+import store from './_store/store';
+import { Provider } from 'react-redux';
 
 const routing = (
-  <Router>
-    <div>
+  <Provider store={store}>
+    <Router>
       <Route exact path="/" component={App} />
       <Route path="/add-question" component={AddQuestion} />
       <Route path="/question/:id" />
-    </div>
-  </Router>
+    </Router>
+  </Provider>
 )
 
 ReactDOM.render(routing, document.getElementById('root'));

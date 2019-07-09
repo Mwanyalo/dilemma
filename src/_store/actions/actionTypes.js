@@ -1,0 +1,2 @@
+export const FETCH_DILEMMAS = 'FETCH_DILEMMAS';
+export const ADD_DILEMMA = 'ADD_DILEMMA';
