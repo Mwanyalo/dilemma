@@ -4,8 +4,11 @@
       "id": 1,
       "attachment": "https://1.bp.blogspot.com/-Bii3S69BdjQ/VtdOpIi4aoI/AAAAAAAABlk/F0z23Yr59f0/s640/cover.jpg",
       "question": "Task 1",
-      "tag": [
-        "relationship"
+      "tags": [
+        {
+          "value": "Relationship",
+          "label": "Relationship"
+        }
       ],
       "createdDate": "2019-05-23T15:48:50.789929",
       "views": 10
@@ -14,8 +17,11 @@
       "id": 2,
       "attachment": "",
       "question": "Question 2",
-      "tag": [
-        "Drugs"
+      "tags":[
+        {
+          "value": "DRUGS",
+          "label": "Drugs"
+        }
       ],
       "createdDate": "2019-05-23T15:48:50.789929",
       "views": 12
@@ -24,8 +30,11 @@
       "id": 3,
       "attachment": "https://cdn.pixabay.com/photo/2019/07/01/21/09/turtles-4310906_960_720.jpg",
       "question": "Question 3",
-      "tag": [
-        "Drugs"
+      "tags": [
+        {
+          "value": "Relationship",
+          "label": "Relationship"
+        }
       ],
       "createdDate": "2019-05-23T15:48:50.789929",
       "views": 12
@@ -34,8 +43,11 @@
       "id": 4,
       "attachment": "https://cdn.pixabay.com/photo/2019/04/14/17/54/sport-4127336_960_720.jpg",
       "question": "Question 4",
-      "tag": [
-        "Education"
+      "tags": [
+        {
+          "value": "Relationship",
+          "label": "Relationship"
+        }
       ],
       "createdDate": "2019-05-23T15:48:50.789929",
       "views": 12
@@ -44,8 +56,11 @@
       "id": 5,
       "attachment": "",
       "question": "Question 5",
-      "tag": [
-        "Education"
+      "tags": [
+        {
+          "value": "Relationship",
+          "label": "Relationship"
+        }
       ],
       "createdDate": "2019-05-23T15:48:50.789929",
       "views": 12
@@ -54,9 +69,11 @@
       "id": 6,
       "attachment": "https://cdn.pixabay.com/photo/2017/06/26/12/49/red-wine-2443699_960_720.jpg",
       "question": "Question 6",
-      "tag": [
-        "Education",
-        "Sex"
+      "tags": [
+        {
+          "value": "Relationship",
+          "label": "Relationship"
+        }
       ],
       "createdDate": "2019-05-23T15:48:50.789929",
       "views": 12
@@ -65,9 +82,11 @@
       "id": 7,
       "attachment": "https://cdn.pixabay.com/photo/2016/09/07/13/25/kermit-1651615_960_720.jpg",
       "question": "Question 7",
-      "tag": [
-        "Education",
-        "Sex"
+      "tags": [
+        {
+          "value": "Relationship",
+          "label": "Relationship"
+        }
       ],
       "createdDate": "2019-05-23T15:48:50.789929",
       "views": 12
@@ -76,8 +95,11 @@
       "id": 8,
       "attachment": "https://cdn.pixabay.com/photo/2017/07/16/22/22/bath-oil-2510783_960_720.jpg",
       "question": "Question 8",
-      "tag": [
-        "Drugs"
+      "tags": [
+        {
+          "value": "Relationship",
+          "label": "Relationship"
+        }
       ],
       "createdDate": "2019-05-23T15:48:50.789929",
       "views": 12
@@ -86,8 +108,11 @@
       "id": 9,
       "attachment": "https://cdn.pixabay.com/photo/2014/09/05/18/32/old-books-436498_960_720.jpg",
       "question": "Question 9",
-      "tag": [
-        "Drugs"
+      "tags": [
+        {
+          "value": "Relationship",
+          "label": "Relationship"
+        }
       ],
       "createdDate": "2019-05-23T15:48:50.789929",
       "views": 12
@@ -96,8 +121,11 @@
       "id": 10,
       "attachment": "https://cdn.pixabay.com/photo/2018/01/25/08/14/beverages-3105631_960_720.jpg",
       "question": "Question 10",
-      "tag": [
-        "Drugs"
+      "tags": [
+        {
+          "value": "Relationship",
+          "label": "Relationship"
+        }
       ],
       "createdDate": "2019-05-23T15:48:50.789929",
       "views": 12
@@ -106,8 +134,11 @@
       "id": 11,
       "attachment": "https://cdn.pixabay.com/photo/2016/03/09/12/12/aperitif-1246311_960_720.jpg",
       "question": "Question 11",
-      "tag": [
-        "Education"
+      "tags": [
+        {
+          "value": "Relationship",
+          "label": "Relationship"
+        }
       ],
       "createdDate": "2019-05-23T15:48:50.789929",
       "views": 12
@@ -116,9 +147,11 @@
       "id": 12,
       "attachment": "",
       "question": "Question 12",
-      "tag": [
-        "Education",
-        "Drugs"
+      "tags": [
+        {
+          "value": "Relationship",
+          "label": "Relationship"
+        }
       ],
       "createdDate": "2019-05-23T15:48:50.789929",
       "views": 12
@@ -127,9 +160,11 @@
       "id": 13,
       "attachment": "https://cdn.pixabay.com/photo/2018/07/17/09/42/aqua-3543817_960_720.jpg",
       "question": "Question 13",
-      "tag": [
-        "Education",
-        "Sex"
+      "tags": [
+        {
+          "value": "Relationship",
+          "label": "Relationship"
+        }
       ],
       "createdDate": "2019-05-23T15:48:50.789929",
       "views": 12
@@ -137,19 +172,30 @@
     {
       "question": "Is it true",
       "anonymous": true,
-      "tag": "Relationship",
+      "tags": [
+        {
+          "value": "Relationship",
+          "label": "Relationship"
+        }
+      ],
       "files": [
         {
           "path": "image8.jpg",
           "preview": "blob:http://localhost:3000/0973297a-48c1-4d80-99a5-e1dd2e48524c"
         }
       ],
+      "createdDate": "2019-05-23T15:48:50.789929",      
       "id": 14
     },
     {
       "question": "tesst 2",
       "anonymous": true,
-      "tag": "Relationship",
+      "tags": [
+        {
+          "value": "Relationship",
+          "label": "Relationship"
+        }
+      ],
       "files": [
         {
           "path": "image5.jpg",
@@ -158,12 +204,18 @@
       ],
       "attachment": "blob:http://localhost:3000/4b56f3c4-4200-4d42-84f0-47b8c05bb88f",
       "views": 0,
+      "createdDate": "2019-05-23T15:48:50.789929",
       "id": 15
     },
     {
       "question": "tesst 2",
       "anonymous": true,
-      "tag": "Relationship",
+      "tags": [
+        {
+          "value": "Relationship",
+          "label": "Relationship"
+        }
+      ],
       "files": [
         {
           "path": "image5.jpg",
@@ -172,12 +224,18 @@
       ],
       "attachment": "blob:http://localhost:3000/4b56f3c4-4200-4d42-84f0-47b8c05bb88f",
       "views": 0,
+      "createdDate": "2019-06-21T15:48:50.789929",
       "id": 16
     },
     {
       "question": "test 3",
       "anonymous": false,
-      "tag": "Relationship",
+      "tags": [
+        {
+          "value": "Relationship",
+          "label": "Relationship"
+        }
+      ],
       "files": [
         {
           "path": "image5.jpg",
@@ -186,12 +244,18 @@
       ],
       "attachment": "",
       "views": 0,
+      "createdDate": "2019-03-13T15:48:50.789929",
       "id": 17
     },
     {
       "question": "test 4",
       "anonymous": false,
-      "tag": "Education",
+      "tags": [
+        {
+          "value": "Relationship",
+          "label": "Relationship"
+        }
+      ],
       "files": [
         {
           "path": "image5.jpg",
@@ -200,12 +264,18 @@
       ],
       "attachment": "",
       "views": 0,
+      "createdDate": "2019-03-23T15:48:50.789929",
       "id": 18
     },
     {
       "question": "test 5",
       "anonymous": false,
-      "tag": "Relationship",
+      "tags": [
+        {
+          "value": "Relationship",
+          "label": "Relationship"
+        }
+      ],
       "files": [
         {
           "path": "image7.jpg",
@@ -214,52 +284,119 @@
       ],
       "attachment": "",
       "views": 0,
+      "createdDate": "2019-06-10T15:48:50.789929",
       "id": 19
     },
     {
       "question": "ddd",
       "anonymous": false,
-      "tag": "Relationship",
+      "tags": [
+        {
+          "value": "Relationship",
+          "label": "Relationship"
+        }
+      ],
       "files": [],
       "attachment": "",
       "views": 0,
+      "createdDate": "2019-06-13T15:48:50.789929",
       "id": 20
     },
     {
       "question": "wwww",
       "anonymous": true,
-      "tag": "Relationship",
+      "tags": [
+        {
+          "value": "Relationship",
+          "label": "Relationship"
+        }
+      ],
       "files": [],
       "attachment": "",
       "views": 0,
+      "createdDate": "2019-06-30T15:48:50.789929",
       "id": 21
     },
     {
       "question": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
       "anonymous": true,
-      "tag": "Relationship",
+      "tags": [
+        {
+          "value": "Relationship",
+          "label": "Relationship"
+        }
+      ],
       "files": [],
       "attachment": "",
       "views": 0,
+      "createdDate": "2019-06-26T15:48:50.789929",
       "id": 22
     },
     {
       "question": "test",
       "anonymous": true,
-      "tag": "Relationship",
+      "tags": [
+        {
+          "value": "Relationship",
+          "label": "Relationship"
+        }
+      ],
       "files": [],
       "attachment": "",
       "views": 0,
+      "createdDate": "2019-06-23T15:48:50.789929",
       "id": 23
     },
     {
       "question": "thta",
       "anonymous": false,
-      "tag": "Relationship",
+      "tags":   [{
+        "value": "DRUGS",
+        "label": "Drugs"
+      }],
       "files": [],
       "attachment": "",
       "views": 0,
+      "createdDate": "2019-07-03T15:48:50.789929",
       "id": 24
+    },
+    {
+      "question": "Yet",
+      "anonymous": false,
+      "tagss": [
+        {
+          "value": "Relationship",
+          "label": "Relationship"
+        }
+      ],
+      "files": [],
+      "attachment": "",
+      "views": 0,
+      "createdDate": "2019-07-09T01:48:50.789929",
+      "id": 25
+    },
+    {
+      "question": "YET 2",
+      "anonymous": false,
+      "tagss": [
+        {
+          "value": "RELATIONSHIP",
+          "label": "Relationship"
+        },
+        {
+          "value": "EDUCATION",
+          "label": "Education"
+        },
+        {
+          "value": "DRUGS",
+          "label": "Drugs"
+        }
+      ],
+      "files": [],
+      "attachment": "",
+      "views": 0,
+      "createdDate": "2019-07-09T15:48:50.789929",
+      "id": 26
     }
   ]
 }
