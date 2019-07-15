@@ -5,9 +5,9 @@ import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
 import { TiAttachment } from "react-icons/ti";
 import { IoIosArrowForward } from "react-icons/io";
-
-import "./AddQuestion.scss";
-import { createDilemma } from '../_store/actions/dilemmaActions';
+import "./AddDilemma.scss";
+import { createDilemma } from '../../store/actions/dilemmaActions';
+import Header from "../../components/Header/Header";
 
 const options = [
   { value: 'DRUGS', label: 'Drugs' },
@@ -36,17 +36,15 @@ const customStyles = {
   })
 };
 
-class AddQuestion extends Component {
+const errors = {
+  message: ""
+}
+
+class AddDilemma extends Component {
 
   constructor(props) {
     super(props);
     this.onDrop = files => {
-      let j = files.map(file =>
-        Object.assign(file, {
-          preview: URL.createObjectURL(file)
-        })
-      )
-      console.log(j);
       this.setState({
         files: files.map(file =>
           Object.assign(file, {
@@ -59,7 +57,7 @@ class AddQuestion extends Component {
     this.state = {
       question: "",
       anonymous: false,
-      tags: null,
+      tags: [],
       files: [],
       attachment: "",
       views: 0
@@ -75,13 +73,18 @@ class AddQuestion extends Component {
   };
 
   handleChangeTag = event => {
-    this.setState({ tags: event });
+    console.log(this.state.tags.length);
+    if (this.state.tags.length <= 2){
+      this.setState({ tags: event });
+    } else {
+      console.log("You can only choose a minimum of 3 tags")
+    }
   };
 
   handleSubmit = event => {
     event.preventDefault();
-    if(this.state.question === "" || this.state.tag === ""){
-       this.error.message = "This is a required field"
+    if(this.state.question === "" || this.state.tags === null || this.state.tags.length === 0){
+      errors.message = "This is a required field"
     } else {
       this.props.createDilemma(this.state);
       this.props.history.push('/')
@@ -100,10 +103,9 @@ class AddQuestion extends Component {
       </div>
     ));
     return (
-      <div className="dilemma-section">
-        <div className="header">
-          <h4>Ask a Question</h4>
-        </div>
+      <div>
+        <Header pageName="Ask a Question"/>
+
         <div className="question-form">
         <form onSubmit={this.handleSubmit}>
 
@@ -143,6 +145,8 @@ class AddQuestion extends Component {
               placeholder={'Select Category'}
               isMulti
               />
+              { this.state.tags === null && 
+               <span className='error'>{errors.message}</span> }
           </div>
 
           <div className="form-group">
@@ -181,8 +185,8 @@ class AddQuestion extends Component {
 }
 
 
-AddQuestion.propTypes = {
+AddDilemma.propTypes = {
   createDilemma: PropTypes.func.isRequired
 };
 
-export default connect(null, { createDilemma })(AddQuestion);
+export default connect(null, { createDilemma })(AddDilemma);

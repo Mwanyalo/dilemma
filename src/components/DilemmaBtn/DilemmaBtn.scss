@@ -1,0 +1,17 @@
+#btn-add {
+  position: fixed;
+  z-index: 1000;
+  right: 20%;
+	bottom:13%;
+	display:table;
+}
+.float-button {
+  background: #ca232a;
+  background-image: -webkit-linear-gradient(45deg,red,purple);
+  background-image: -o-linear-gradient(45deg,red,purple);
+  background-image: linear-gradient(45deg,red,purple);
+  color: white;
+  padding: 8px 12px;
+  box-shadow: 2px 2px 3px #999;
+  position: absolute;
+}
