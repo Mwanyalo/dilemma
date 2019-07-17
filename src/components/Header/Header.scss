@@ -1,0 +1,21 @@
+@import "../../styles/variables.scss";
+
+.header {
+  background-color: #fff;
+  text-align: center;
+  min-height: 56px;
+  box-shadow: 0px 4px 4px -4px #888888;
+  position: fixed;
+  z-index: 300;
+  width: $body-width;
+}
+.header h4{
+  padding-top: 10px; 
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+  .header {
+    width: 100%;
+  }
+}

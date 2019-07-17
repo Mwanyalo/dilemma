@@ -5,29 +5,5 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   background-color: $background;
-  font-size: 15px;
+  font-size: 24px;
 }
-.dilemma-section {
-  height: 100vh;
-  width: 600px;
-  margin: 0 auto;
-  text-align: left;
-  position: relative;
-}
-.header {
-  background-color: #fff;
-  text-align: center;
-  min-height: 56px;
-  box-shadow: 0px 4px 4px -4px #888888;
-}
-.header h4{
-  padding-top: 10px; 
-}
-
-/* Extra small devices (phones, 600px and down) */
-@media only screen and (max-width: 600px) {
-  .dilemma-section {
-    width: 100%;
-    font-size: 13px;
-  }
-} 

@@ -7,25 +7,23 @@ import DilemmaBtn from "../../components/DilemmaBtn/DilemmaBtn";
 import Header from "../../components/Header/Header";
 
 export class Discussions extends Component {
+  
   componentWillMount() {
     this.props.fetchDilemmas();
   }
 
-  componentWillReceiveProps(nextProps) {
-    if (nextProps.addDilemma) {
-      this.props.dilemmas.unshift(nextProps.addDilemma);
-    }
-  }
-
   render() {
     const { dilemmas } = this.props;
+
     return (
       <div>
         <Header pageName="Discussion"/>
         <DilemmaBtn />
-        {dilemmas.map((dilemma, i) => (
-          <Discussion dilemma={ dilemma } key={ i } />
-        ))}
+        <div style={{"paddingTop": "56px"}}>
+          {dilemmas.map((dilemma, i) => (
+            <Discussion dilemma = { dilemma } key={ i } />
+          ))}
+        </div>
       </div>
     );
   }
@@ -33,13 +31,11 @@ export class Discussions extends Component {
 
 Discussions.propTypes = {
   fetchDilemmas: PropTypes.func.isRequired,
-  dilemmas: PropTypes.array.isRequired,
-  addDilemma: PropTypes.object
+  dilemmas: PropTypes.array.isRequired
 };
 
 const mapStateToProps = state => ({
-  dilemmas: state.dilemmas.items,
-  addDilemma: state.dilemmas.item
+  dilemmas: state.dilemmas.items
 });
 
 export default connect(

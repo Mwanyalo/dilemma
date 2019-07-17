@@ -7,6 +7,9 @@
   width: 100%;
   box-shadow: -2px 0 4px -4px rgb(128, 128, 128), 2px 0 4px -4px rgb(128, 128, 128);
 }
+form {
+  margin-top: 56px;
+}
 textarea {
   border: none;
 }
@@ -36,7 +39,7 @@ textarea {
 .attachment-icon {
   border: 1px solid #8a8a8a;
   border-radius: 50%;
-  padding: 10px 5px;
+  padding: 4px;
 }
 .icon-size{
   font-size: 34px;
@@ -51,8 +54,13 @@ textarea {
   background-image: -o-linear-gradient(45deg,purple, red);
   background-image: linear-gradient(45deg,purple, red);
   width: 70%;
+  font-weight: 500;
   height: 35px;
   color: #fff;
+}
+
+.error { 
+  color: red;
 }
 
 /* Extra small devices (phones, 600px and down) */
@@ -61,14 +69,12 @@ textarea {
     height: 100vh;
   }
   .attachment-icon {
-    padding: 7px 4px;
+    padding: 5px;
   }
   .icon-size{
     font-size: 24px;
   }
   .question-btn {
     width: 90%;
-    height: 30px;
-    font-size: 14px;
   }
 } 

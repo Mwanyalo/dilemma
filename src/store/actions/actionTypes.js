@@ -1,2 +1,5 @@
 export const FETCH_DILEMMAS = 'FETCH_DILEMMAS';
 export const ADD_DILEMMA = 'ADD_DILEMMA';
+export const UPDATE_DILEMMA = 'UPDATE_DILEMMA';
+export const FETCH_USER = 'FETCH_USER';
+

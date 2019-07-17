@@ -1,0 +1,54 @@
+.dilemma-footer{
+  padding: 0 1rem 1rem;
+}
+.card-reply {
+  margin-right: 10px;
+  border-width: 1px;
+  border-style: solid;
+  border-color: #0ab2e4;
+  color: #0ab2e4;
+  font-weight: 450;
+  font-size: 65%;
+}
+.reply-icon{
+  padding: 1px 4px;
+}
+.reply-counter{
+  background-color: #0ab2e4;
+  color: #fff;
+  padding: 1px 5px;
+}
+.unfollow {
+  border-width: 1px;
+  border-style: solid;
+  border-color: #9042f5;
+  color: #9042f5;
+  font-weight: 450;
+  cursor: pointer;
+  font-size: 65%;
+}
+.follow {
+  border-width: 1px;
+  border-style: solid;
+  border-color: #6e46d2;
+  cursor: pointer;
+  color: #fff;
+  background-color: #6e46d2; 
+  font-weight: 450;
+  font-size: 65%;
+}
+.follow-icon{
+  padding: 1px 4px;
+}
+.follow-counter{
+  background-color: #52349d;
+  color: #fff;
+  padding: 1px 5px;
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+  .dilemma-footer {
+    padding: 0.5rem;
+  }
+}

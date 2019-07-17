@@ -1,12 +1,12 @@
 import { createStore, applyMiddleware, compose } from 'redux';
 import thunk from 'redux-thunk';
-import dilemmaReducer from './reducers';
+import combineReducers from './reducers';
 
 const initialState = {};
 const middleware = [thunk];
 
 const store = createStore(
-  dilemmaReducer,
+  combineReducers,
   initialState,
   compose(
     applyMiddleware(...middleware),

@@ -1,0 +1,19 @@
+@import "../../styles/variables.scss";
+
+.dilemma-section {
+  height: 100vh;
+  width: $body-width;
+  margin: 0 auto;
+  text-align: left;
+  position: relative;
+  font-size: $web-size;
+}
+
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+  .dilemma-section {
+    width: 100%;
+    font-size: $mobile-size;
+  }
+} 

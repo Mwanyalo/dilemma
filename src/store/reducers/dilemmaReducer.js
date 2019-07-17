@@ -1,8 +1,7 @@
-import { FETCH_DILEMMAS, ADD_DILEMMA } from '../actions/actionTypes';
+import { FETCH_DILEMMAS, ADD_DILEMMA, UPDATE_DILEMMA } from '../actions/actionTypes';
 
 const initialState = {
-  items: [],
-  item: {}
+  items: []
 };
 
 const dilemmaReducer = (state = initialState, action) => {
@@ -15,7 +14,20 @@ const dilemmaReducer = (state = initialState, action) => {
     case ADD_DILEMMA:
       return {
         ...state,
-        item: action.payload
+        items: [
+          ...state.items,
+          action.payload
+        ]
+      };
+    case UPDATE_DILEMMA:
+      const index = state.items.findIndex((item) => item.id === action.payload.id)
+      return {
+        ...state,
+        items: [
+          ...state.items.slice(0, index),
+          action.payload,
+          ...state.items.slice(index + 1),
+        ]
       };
     default:
       return state;
