@@ -1,4 +1,4 @@
-import { FETCH_DILEMMAS, ADD_DILEMMA, UPDATE_DILEMMA } from './actionTypes';
+import { FETCH_DILEMMAS, ADD_DILEMMA, UPDATE_DILEMMA, FETCH_DILEMMA } from './actionTypes';
 import dilemmas from "../../apis/config";
 
 export const fetchDilemmas = () => async dispatch => {
@@ -14,4 +14,9 @@ export const createDilemma = postDilemma => async dispatch => {
 export const updateDilemma = updateDilemma => async dispatch => {
   const response = await dilemmas.put(`/dilemmas/${updateDilemma.id}`, updateDilemma);
   dispatch({ type: UPDATE_DILEMMA, payload: response.data });
+};
+
+export const fetchDilemma = id => async dispatch => {
+  const response = await dilemmas.get(`/dilemmas/${id}`);
+  dispatch({ type: FETCH_DILEMMA, payload: response.data });
 };

@@ -2,4 +2,13 @@ export const FETCH_DILEMMAS = 'FETCH_DILEMMAS';
 export const ADD_DILEMMA = 'ADD_DILEMMA';
 export const UPDATE_DILEMMA = 'UPDATE_DILEMMA';
 export const FETCH_USER = 'FETCH_USER';
+export const FETCH_DILEMMA = "FETCH_DILEMMA"
 
+export const CREATE_COMMENT = "CREATE_COMMENT";
+export const FETCH_COMMENTS = "FETCH_COMMENTS";
+export const FETCH_COMMENT = "FETCH_COMMENT";
+export const EDIT_COMMENT = "EDIT_COMMENT";
+export const DELETE_COMMENT = "DELETE_COMMENT";
+export const CREATE_REPLY = "CREATE_REPLY";
+export const FETCH_REPLIES = "FETCH_REPLIES";
+export const FETCH_REPLY = "FETCH_REPLY"

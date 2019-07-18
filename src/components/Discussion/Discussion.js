@@ -13,7 +13,7 @@ export class Discussion extends Component {
     const { tags = [] } = dilemma;
 
     return (
-      <div className="card m-2">
+      <div className="card discussions-card m-2">
         <Link
           className="link-to"
           to={{

@@ -14,7 +14,9 @@ export class DilemmaRespondents extends Component {
   constructor(props){
     super(props)
     this.dilemma = props.dilemma;
-    if (this.dilemma.followers.find(e => {return e === this.user.id})) {
+    if (this.dilemma) {
+      this.followStyle = "follow";
+    } else if (this.dilemma.followers.find(e => {return e === this.user.id})) {
       this.followStyle = "follow"
     } else {
       this.followStyle = "unfollow"
@@ -22,8 +24,10 @@ export class DilemmaRespondents extends Component {
   }
   
   subscribe = () => {
-    if (this.dilemma.followers.find(e => {return e === this.user.id})) {
-      this.dilemma.followers.splice( this.dilemma.followers.indexOf(this.user.id), 1 );
+    const { followers = [] } = this.dilemma;
+
+    if (followers.find(e => {return e === this.user.id})) {
+      this.dilemma.followers.splice( followers.indexOf(this.user.id), 1 );
       this.props.updateDilemma(this.dilemma);
       this.followStyle = "unfollow"
     } else {
@@ -34,7 +38,7 @@ export class DilemmaRespondents extends Component {
   };
 
   render() {
-    
+    const { followers = [] } = this.dilemma;
     return (
       <div className="dilemma-footer">
       <div>
@@ -51,7 +55,7 @@ export class DilemmaRespondents extends Component {
           <span className="follow-icon">
             <FiRss /> Follow
           </span>
-          <span className="follow-counter">{ this.dilemma.followers.length}</span>
+          <span className="follow-counter">{ followers.length}</span>
         </small>
       </div>
     </div>

@@ -1,0 +1,33 @@
+.send-btn {
+  position: absolute;
+  bottom: 6px;
+  left: 92%;
+  width: 25px;
+  height: 25px;
+  cursor: pointer;
+  color: red;
+}
+.description-field {
+  max-width: 500px;
+}
+
+#input-field {
+  border: 5px solid #e8e6e6;
+  font-size: 12px;
+  font-family: sans-serif;
+}
+@media only screen and (max-width: 600px) {
+  .description-field {
+    max-width: 100%;
+  }
+  .send-btn {
+    width: 15px;
+    height: 15px;
+    bottom: 8px;
+    position: absolute;
+  }
+  #input-field {
+    border: 2px solid #e8e6e6;
+    font-size: 11px;
+  }
+}
